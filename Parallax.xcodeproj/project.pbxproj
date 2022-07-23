@@ -11,6 +11,11 @@
 		D065F2BB288B5F05005A698F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065F2BA288B5F05005A698F /* ContentView.swift */; };
 		D065F2BD288B5F06005A698F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D065F2BC288B5F06005A698F /* Assets.xcassets */; };
 		D065F2C1288B5F06005A698F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D065F2C0288B5F06005A698F /* Preview Assets.xcassets */; };
+		D065F2CA288B7231005A698F /* GabrielaStencil-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D065F2C8288B7231005A698F /* GabrielaStencil-Bold.ttf */; };
+		D065F2CB288B7231005A698F /* GabrielaStencil-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D065F2C9288B7231005A698F /* GabrielaStencil-Light.ttf */; };
+		D065F2D0288B748E005A698F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D065F2CF288B748E005A698F /* Home.swift */; };
+		D0815931288B87300088C014 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0815930288B87300088C014 /* Places.swift */; };
+		D0815933288B92090088C014 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0815932288B92090088C014 /* MotionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,12 @@
 		D065F2BC288B5F06005A698F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D065F2BE288B5F06005A698F /* Parallax.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Parallax.entitlements; sourceTree = "<group>"; };
 		D065F2C0288B5F06005A698F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D065F2C8288B7231005A698F /* GabrielaStencil-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GabrielaStencil-Bold.ttf"; sourceTree = "<group>"; };
+		D065F2C9288B7231005A698F /* GabrielaStencil-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GabrielaStencil-Light.ttf"; sourceTree = "<group>"; };
+		D065F2CC288B7377005A698F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D065F2CF288B748E005A698F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D0815930288B87300088C014 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		D0815932288B92090088C014 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +63,11 @@
 		D065F2B7288B5F05005A698F /* Parallax */ = {
 			isa = PBXGroup;
 			children = (
+				D081592F288B87120088C014 /* Model */,
+				D065F2CE288B746D005A698F /* ViewModel */,
+				D065F2CD288B7466005A698F /* View */,
+				D065F2CC288B7377005A698F /* Info.plist */,
+				D065F2C7288B70BA005A698F /* Fonts */,
 				D065F2B8288B5F05005A698F /* ParallaxApp.swift */,
 				D065F2BA288B5F05005A698F /* ContentView.swift */,
 				D065F2BC288B5F06005A698F /* Assets.xcassets */,
@@ -67,6 +83,39 @@
 				D065F2C0288B5F06005A698F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D065F2C7288B70BA005A698F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D065F2C8288B7231005A698F /* GabrielaStencil-Bold.ttf */,
+				D065F2C9288B7231005A698F /* GabrielaStencil-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D065F2CD288B7466005A698F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D065F2CF288B748E005A698F /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D065F2CE288B746D005A698F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0815932288B92090088C014 /* MotionManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D081592F288B87120088C014 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0815930288B87300088C014 /* Places.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D065F2CA288B7231005A698F /* GabrielaStencil-Bold.ttf in Resources */,
+				D065F2CB288B7231005A698F /* GabrielaStencil-Light.ttf in Resources */,
 				D065F2C1288B5F06005A698F /* Preview Assets.xcassets in Resources */,
 				D065F2BD288B5F06005A698F /* Assets.xcassets in Resources */,
 			);
@@ -140,7 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D065F2BB288B5F05005A698F /* ContentView.swift in Sources */,
+				D0815933288B92090088C014 /* MotionManager.swift in Sources */,
+				D065F2D0288B748E005A698F /* Home.swift in Sources */,
 				D065F2B9288B5F05005A698F /* ParallaxApp.swift in Sources */,
+				D0815931288B87300088C014 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Parallax/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -307,6 +362,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Parallax/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
